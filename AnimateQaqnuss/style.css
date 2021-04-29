@@ -1,0 +1,178 @@
+/* QAQNUSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+header {
+    height: 60px;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+header h1 {
+    color: chartreuse;
+    font-weight: lighter;
+}
+header ul {
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+}
+
+header  ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: red;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.section {
+    margin:auto;
+    width: 60%;
+}
+
+.container {
+    color: rgb(24, 141, 0);
+    /* align-items: center; */
+    text-transform: uppercase ;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 200px;
+    padding-left: 250px;
+    position: fixed;
+    display: block;
+    float: left;
+}
+
+.flip {
+    height: 50px;
+    overflow: hidden;
+}
+
+.flip > div > div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+.flip >div:first-child {
+    animation: middle 5s linear infinite;
+}
+
+.flip >div div{
+    background: rgb(35, 161, 4);
+}
+
+.flip >div:first-child div{
+    background: blue;
+}
+
+.flip >div:last-child div{
+    background: red;
+}
+
+@keyframes middle {
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    35% {
+        margin-top: -90px;
+    }
+    60% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+} 
+
+.image {
+    float: right;
+    padding: 150px 0 0 0;
+    /* animation: hand 5s linear infinite; */
+}
+  
+.rasm {
+    position: absolute;
+
+}
+
+.rasm:nth-child(1) {
+    width: 50px;
+    opacity: 0.5;
+    animation: hand 1s linear infinite ;
+}
+
+.rasm:nth-child(2) {
+    width: 80px;
+    opacity: 0.7;
+    animation: hand 2s linear infinite ;
+}
+
+.rasm:nth-child(3) {
+    width: 110px;
+    opacity: 1;
+    animation: hand 3s linear infinite;
+}
+
+
+.rasm:nth-child(4) {
+    width: 150px;
+    opacity: 1.2;
+    animation: hand 4s linear infinite ;
+}
+
+.rasm:nth-child(5) {
+    width: 200px;
+    opacity: 1.5;
+    animation: hand 5s linear infinite ;
+}
+
+.rasm:nth-child(6) {
+    width: 310px;
+    /* opacity: 2.4; */
+    animation: hand 6s linear infinite ;
+}
+
+@keyframes hand {
+    from{right:0px;}
+    to{left:0px;}
+}
+
+@media(max-width:770px) {
+    .section {
+        width: 50%;
+        margin-bottom: 300px;
+    }
+}
+
+@media(max-width: 488px) {
+    .section{
+        width: 100%;
+    }
+}
+
+/* QAQNUSS */
